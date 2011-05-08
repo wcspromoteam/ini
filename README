@@ -1,0 +1,15 @@
+PACKAGE
+
+package ini
+import "github.com/wcspromoteam/ini"
+
+A simple package to read ini files (actually just name=value files, [sections] are not supported yet because we have no need for them.
+
+
+FUNCTIONS
+
+func Load(filename string) (settings map[string]string, e os.Error)
+Load an ini file. Pass a filename, returns a map of all of the name=value pairs within the file, and an error if applicable.
+
+func Save(filename string, settings map[string]string) (e os.Error)
+Save a map of settings to filename in name=value format. Returns nil on success, error otherwise.
