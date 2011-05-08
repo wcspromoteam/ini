@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 	// Local imports
-	"util/dlog"
+	"github.com/wcspromoteam/dlog"
 )
 
 // Load an ini file. Pass a filename, returns a map of all of the name=value pairs within the file, and an error if applicable. 
